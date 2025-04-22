@@ -1,0 +1,117 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='Artboard-5' fill='%23ffffff' fill-opacity='0.09' fill-rule='nonzero'%3E%3Cpath d='M6 18h12V6H6v12zM4 4h16v16H4V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    margin: 0 auto;
+    padding: 0;
+    max-width: 648px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.second-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.second-header-gif {
+    height: 319px;
+    width: 560px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.badge {
+    height: 31px;
+    width: 88px;
+    margin: 0;
+    padding: 0;
+}
+
+.cool-sites {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        margin: 10px 0 5px 0;
+        padding: 0;
+    }
+}
+
+.cs-entry {
+    margin: 10px 0 5px 0;
+    padding: 5px 10px;
+    vertical-align: middle;
+    width: 25%;
+    height: 25%;
+    border-radius: 5px; 
+    color: white;
+    background-color: #000000;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    img {
+        width: 25px;
+        height: 25px;
+        border-radius: 5px; 
+    }
+    a {
+        margin: 0;
+        padding: 3px 0 0 0;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+}
