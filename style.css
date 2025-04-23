@@ -43,7 +43,7 @@ a {
 
 .second-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0;
     margin: 0 auto;
     padding: 0;
@@ -53,15 +53,15 @@ a {
 }
 
 .second-header-gif {
-    height: 319px;
-    width: 560px;
-    border-top-right-radius: 5px;
+    height: 166px;
+    width: 263.2px;
+    border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .badges {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1px;
     margin: 0;
     padding: 0;
@@ -70,7 +70,7 @@ a {
 }
 .badge {
     height: 31px;
-    width: 88px;
+    width: 87.065px;
     margin: 0;
     padding: 0;
 }
