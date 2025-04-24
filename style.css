@@ -94,10 +94,21 @@ a {
     padding: 0;
     img {
       image-rendering: auto;
-      image-rendering: crisp-edges;
       image-rendering: pixelated;
       image-rendering: -webkit-optimize-contrast;
     }
+}
+
+.large-badge {
+  a img {
+    image-rendering: auto;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+    height: 31px;
+    width: 266px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .cool-sites {
