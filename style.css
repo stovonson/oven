@@ -144,8 +144,7 @@ a {
     font-size: 24px;
     margin: 0 0 10px 0;
     padding: 0;
-    max-width: 80%;
-    width: 100%;
+    width: 266px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
