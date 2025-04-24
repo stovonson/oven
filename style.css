@@ -41,6 +41,25 @@ a {
     }
 }
 
+.describe {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    max-width: 325px;
+    p {
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .second-header {
     display: flex;
     flex-direction: column;
