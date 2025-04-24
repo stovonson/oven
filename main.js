@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", () => {
       const tag = button.getAttribute("data-filter");
 
-      // Toggle tag in activeFilters
       if (activeFilters.includes(tag)) {
         activeFilters = activeFilters.filter(f => f !== tag);
         button.classList.remove("active");
@@ -16,17 +15,23 @@ document.addEventListener("DOMContentLoaded", function () {
         activeFilters.push(tag);
         button.classList.add("active");
       }
-
-      // If no filters selected, show all
+      
       if (activeFilters.length === 0) {
         projects.forEach(project => {
           project.style.display = "flex";
         });
       } else {
         projects.forEach(project => {
-          const projectTag = project.getAttribute("data-tag");
-          if (activeFilters.includes(projectTag)) {
-            project.style.display = "flex";
+          const projectTagsString = project.getAttribute("data-tag");
+          const projectTags = projectTagsString.split(" ");
+          let showProject = false;
+          for(const tag of activeFilters){
+            if (projectTags.includes(tag)){
+              showProject = true;
+            }
+          }
+          if (showProject) {
+              project.style.display = "flex";
           } else {
             project.style.display = "none";
           }

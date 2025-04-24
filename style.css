@@ -73,7 +73,7 @@ a {
 
 .second-header-gif {
     height: 166px;
-    width: 263.2px;
+    width: 266px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -89,7 +89,7 @@ a {
 }
 .badge {
     height: 31px;
-    width: 87.065px;
+    width: 88px;
     margin: 0;
     padding: 0;
     img {
@@ -159,7 +159,7 @@ a {
 
   .project p {
     font-size: 0.75rem;
-    margin: 0 5px 0 5px;
+    margin: 0 2.5px;
     padding: 2px;
     vertical-align: middle;
     align-items: end;
@@ -174,8 +174,11 @@ a {
     flex-wrap: wrap;
     gap: 10px;
     margin: 10px auto;
-    max-width: 325px;
+    max-width: 264px;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .filter-button {
@@ -186,7 +189,7 @@ a {
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.2s ease;
-    width: 25%;
+    width: 100%;
     border: 2px solid transparent;
   }
 
