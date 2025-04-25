@@ -184,7 +184,7 @@ a {
     flex-wrap: wrap;
     gap: 10px;
     margin: 10px auto;
-    max-width: 264px;
+    max-width: 270px;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
