@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stovetop</title>
   <link href='/style.css' rel='stylesheet'>
-  <link rel="icon" type="image/x-icon" href="/misc-images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/misc-images/favicon.png" style="border-radius: 5px;">
 </head>
 <body>
   <div class="header">
+    <img src="/misc-images/favicon.png" alt="Stovetop Logo">
     <h1>Stovetop</h1>
   </div>
   <div class="describe">
@@ -24,12 +25,19 @@
     <button data-filter="gaming" class="filter-button">Gaming</button>
     <button data-filter="tools" class="filter-button">Tools</button>
     <button data-filter="web" class="filter-button">Web</button>
+    <button data-filter="art" class="filter-button">Art</button>
+    <button data-filter="misc" class="filter-button">Misc</button>
+  </div>
+  <div class="search-container">
+    <input type="text" id="site-search" placeholder="Search sites..." class="search-input">
+    <button id="search-button" class="search-button">Search</button>
   </div>
   <div class="projects">
-    <a href="https://github.com" class="project" data-tag="coding">
+    <a href="https://github.com" class="project" data-tag="coding web">
       <img src="/cool-sites-logos/github.svg" alt="GitHub">
       <span>GitHub</span>
       <p>coding</p>
+      <p>web</p>
     </a>
     <a href="https://modrinth.com" class="project" data-tag="gaming">
       <img src="/cool-sites-logos/modrinth.jpeg" alt="Modrinth">
@@ -41,20 +49,22 @@
       <span>Cookpot</span>
       <p>tools</p>
     </a>
-    <a href="https://quicolor.pages.dev" class="project" data-tag="tools">
+    <a href="https://quicolor.pages.dev" class="project" data-tag="tools art coding">
       <img src="/cool-sites-logos/quicolor.png" alt="Quicolor">
       <span>Quicolor</span>
       <p>tools</p>
+      <p>art</p>
+      <p>coding</p>
     </a>
     <a href="https://firebase.studio" class="project" data-tag="coding">
       <img src="/cool-sites-logos/firebase-studio.png" alt="Firebase Studio">
       <span>FB Studio</span>
       <p>coding</p>
     </a>
-    <a href="https://dunce.app" class="project" data-tag="tools">
+    <a href="https://dunce.app" class="project" data-tag="misc">
       <img src="/cool-sites-logos/dunce.svg" alt="Dunce.app">
       <span>Dunce.app</span>
-      <p>tools</p>
+      <p>misc</p>
     </a>
     <a href="https://bgbye.fyrean.com" class="project" data-tag="tools">
       <img src="/cool-sites-logos/bgbye.png" alt="BG Bye">
@@ -66,10 +76,11 @@
       <span>Cobalt</span>
       <p>tools</p>
     </a>
-    <a href="https://intergrav.github.io/devins-badges-docs" class="project" data-tag="coding">
+    <a href="https://intergrav.github.io/devins-badges-docs" class="project" data-tag="coding gaming">
       <img src="/cool-sites-logos/devins-badges.svg" alt="Devin's Badges">
       <span>Devin's Badges</span>
       <p>coding</p>
+      <p>gaming</p>
     </a>
     <a href="https://swapanything.io/watermark-photos" class="project" data-tag="tools">
       <img src="/cool-sites-logos/swapanything.svg" alt="Watermarker">
@@ -96,10 +107,10 @@
       <span>Play.Hosting</span>
       <p>gaming</p>
     </a>
-    <a href="https://free.hrsn.dev/#/" class="project" data-tag="tools">
+    <a href="https://free.hrsn.dev/#/" class="project" data-tag="misc">
       <img src="/cool-sites-logos/free-for-life.svg" alt="Free For Life">
       <span>Free For Life</span>
-      <p>tools</p>
+      <p>misc</p>
     </a>
     <a href="https://symbolwiki.com" class="project" data-tag="tools">
       <img src="/cool-sites-logos/symbolwiki.png" alt="Symbolwiki">
@@ -121,10 +132,10 @@
       <span>AWS Free</span>
       <p>web</p>
     </a>
-    <a href="https://liquid.paper.design" class="project" data-tag="tools">
+    <a href="https://liquid.paper.design" class="project" data-tag="misc">
       <img src="/cool-sites-logos/paper-design.svg" alt="Liquid Metal">
       <span>Liquid Metal</span>
-      <p>tools</p>
+      <p>misc</p>
     </a>
     <a href="https://www.todoist.com" class="project" data-tag="tools">
       <img src="/cool-sites-logos/todoist.jpeg" alt="Todoist">
@@ -136,10 +147,12 @@
       <span>noclip.website</span>
       <p>gaming</p>
     </a>
-    <a href="https://thispersondoesnotexist.com" class="project" data-tag="tools">
+    <a href="https://thispersondoesnotexist.com" class="project" data-tag="tools coding art">
       <img src="/cool-sites-logos/tpdne.svg" alt="TPDNE">
       <span>TPDNE</span>
       <p>tools</p>
+      <p>coding</p>
+      <p>art</p>
     </a>
     <a href="https://www.iloveimg.com" class="project" data-tag="tools">
       <img src="/cool-sites-logos/iloveimg.jpeg" alt="ILoveIMG">
@@ -149,6 +162,23 @@
     <a href="https://www.ilovepdf.com" class="project" data-tag="tools">
       <img src="/cool-sites-logos/ilovepdf.png" alt="ILovePDF">
       <span>ILovePDF</span>
+      <p>tools</p>
+    </a>
+    <a href="https://www.canva.com" class="project" data-tag="tools art">
+      <img src="/cool-sites-logos/canva.svg" alt="Canva">
+      <span>Canva</span>
+      <p>tools art</p>
+    </a>
+    <a href="https://svgl.app" class="project" data-tag="tools art coding">
+      <img src="/cool-sites-logos/svgl.svg" alt="SVGL">
+      <span>SVGL</span>
+      <p>tools</p>
+      <p>art</p>
+      <p>coding</p>
+    </a>
+    <a href="https://pinetools.com" class="project" data-tag="tools">
+      <img src="/cool-sites-logos/pinetools.png" alt="PineTools">
+      <span>PineTools</span>
       <p>tools</p>
     </a>
   </div>

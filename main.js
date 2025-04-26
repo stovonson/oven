@@ -40,3 +40,55 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('site-search');
+  const searchButton = document.getElementById('search-button');
+  const projects = document.querySelectorAll('.project');
+  
+  const noResults = document.createElement('div');
+  noResults.className = 'no-results';
+  noResults.textContent = 'No matching sites found';
+  document.querySelector('.projects').after(noResults);
+  
+  function performSearch() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    let resultsFound = false;
+    
+    projects.forEach(project => {
+      const siteName = project.querySelector('span').textContent.toLowerCase();
+      const tags = Array.from(project.querySelectorAll('p')).map(p => p.textContent.toLowerCase());
+      const matchesSiteName = siteName.includes(searchTerm);
+      const matchesTags = tags.some(tag => tag.includes(searchTerm));
+      
+      if (searchTerm === '' || matchesSiteName || matchesTags) {
+        project.style.display = 'flex';
+        resultsFound = true;
+      } else {
+        project.style.display = 'none';
+      }
+    });
+    
+    noResults.style.display = resultsFound ? 'none' : 'block';
+  }
+  
+  searchButton.addEventListener('click', performSearch);
+  
+  searchInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
+  
+  searchInput.addEventListener('input', function() {
+    if (searchInput.value === '') {
+      performSearch();
+    }
+  });
+  
+  const filterButtons = document.querySelectorAll('.filter-button');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      searchInput.value = '';
+    });
+  });
+});

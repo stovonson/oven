@@ -32,7 +32,9 @@ a {
         justify-content: center;
         align-items: center;
     }
-    p {
+    img {
+        height: 29px;
+        width: 29px;
         margin: 0;
         padding: 0;
         vertical-align: middle;
@@ -146,36 +148,44 @@ a {
     padding: 0;
     width: 266px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
     border-radius: 5px;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
   }
   
-  .project span {
-    position: relative;
-    font-size: 18px;
-  }
-  
   .project img {
+    height: auto;
     width: 29px;
-    height: 29px;
     margin-right: 5px;
     position: relative;
     border-right: 2px white solid;
+    border-bottom: 2px white solid;
+    border-bottom-right-radius: 5px;
   }
-
+  
+  .project span {
+    position: relative;
+    font-size: 18px;
+    flex-grow: 1;
+  }
+  
   .project p {
     font-size: 0.75rem;
-    margin: 0 2.5px;
+    margin: 2px 2.5px;
     padding: 2px;
-    vertical-align: middle;
-    align-items: end;
-    position: relative;
     background-color: #171717;
     border-radius: 5px;
+    order: 2;
+  }
+  
+  .project::after {
+    content: "";
+    width: 100%;
+    display: block;
+    order: 1;
   }
 
   .filter-tags {
@@ -212,3 +222,44 @@ a {
     border: 2px solid white;
   }
   
+  .search-container {
+    display: flex;
+    max-width: 270px;
+    margin: 10px auto 15px auto;
+    gap: 5px;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #111;
+    border: none;
+    color: white;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: white;
+  }
+  
+  .search-button {
+    background-color: #111;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #333;
+  }
+  
+  .no-results {
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: #fff;
+    display: none;
+  }
