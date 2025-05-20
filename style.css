@@ -182,26 +182,16 @@ a {
   background-color: #333;
 }
 
-/* Support badges - separated from second header */
 .support-badges {
-  display: flex;
-  flex-direction: column;
-  margin: 15px auto;
-  max-width: 266px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.support-badges a {
-  display: block;
-  text-decoration: none;
-}
-
-.support-badges img {
-  width: 266px;
+.support-badges a img {
+  width: 31px;
   height: 31px;
-  image-rendering: pixelated;
 }
 
-/* Second header section */
 .second-header {
   display: flex;
   flex-direction: column;
