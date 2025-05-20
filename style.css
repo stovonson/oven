@@ -187,7 +187,10 @@ a {
   margin-bottom: 5px;
 }
 
-.support-badges a img {
+.support-badge {
+}
+
+.support-badge img {
   width: 31px;
   height: 31px;
 }
