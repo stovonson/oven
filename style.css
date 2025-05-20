@@ -42,7 +42,7 @@ a {
 }
 .second-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -68,14 +68,21 @@ a {
     image-rendering: pixelated;
   }
 }
+
 .large-badge {
   display: flex;
   flex-direction: column;
-  a img {
-    image-rendering: pixelated;
-    height: 31px;
-    width: 266px;
-  }
+}
+
+.large-badge a {
+  display: block;
+  text-decoration: none;
+}
+
+.large-badge a img {
+  image-rendering: pixelated;
+  height: 31px;
+  width: 266px;
 }
 
 .cool-sites {
