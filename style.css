@@ -69,6 +69,8 @@ a {
   }
 }
 .large-badge {
+  display: flex;
+  flex-direction: column;
   a img {
     image-rendering: pixelated;
     height: 31px;
